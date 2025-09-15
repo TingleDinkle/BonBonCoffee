@@ -10,7 +10,7 @@ Here's the link to all the diagrams for this project: https://drive.google.com/f
 
 Use draw.io to see in more details
 # How does it work?
-# =============================================
+# =====================================
 # Programming Guidelines:
 Feature Development
 The project is developed in Java (NetBeans Maven project), using SQL Server.
