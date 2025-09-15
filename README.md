@@ -70,7 +70,7 @@ Variable names, classes, and methods must be clearly named; important code secti
 - JDK: 23
 
 - Database Management System: SQL Server 2022
-
+# =====================================
 # Interface design for functions:
 
 - Load form:
