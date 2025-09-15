@@ -249,5 +249,6 @@ EXEC ThongKeDoanhThuTheoNam @Nam = ?;
 
 ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/32f0c85f779fdac8dddb29b0a582ae0d84e9f687/Screenshot%202025-09-15%20133758.png)
 
-# Testings were conducted throughly, program works as expected. I won't provide the unit testings though.
+# Testings were conducted throughly, program works as expected.
+I won't provide the unit testings though.
 
