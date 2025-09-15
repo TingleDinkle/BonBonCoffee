@@ -75,5 +75,5 @@ Variable names, classes, and methods must be clearly named; important code secti
 
 - Load form:
 
-   ![image alt](https://lh3.googleusercontent.com/keep-bbsk/AFgXFlIDCmCC-TbQ6cw-m3ANlsw501ue3JqzQXU2GCulSnC-iHjCaIG9xHZ0JyQGFJPuko05ckUo9yvdE8rZysFTxEw1KFPXVjC42J-bC9lQv7bdLdMNfVfgKQ=s529)
+   ![image alt](https://cdn.corenexis.com/view/8744935168)
 
