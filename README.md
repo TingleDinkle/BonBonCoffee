@@ -77,3 +77,57 @@ Variable names, classes, and methods must be clearly named; important code secti
 
    ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/24bfb0f2aa0f41a82877751694f5b2ffe32042e5/unnamed.png)
 
+- Introduction form:
+
+   ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(1).png)
+
+- Login Form:
+
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(2).png)
+  
+- Change Password Form:
+
+   ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(3).png)
+
+- Main Interface Form:
+
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(4).png)
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(5).png)
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(6).png)
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(7).png)
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(8).png)
+  
+
+- Employee Management Form:
+
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(9).png)
+
+- Customer Management Form:
+
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(10).png)
+
+- Order Management Form:
+
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(11).png)
+
+- Products Management Form:
+
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(12).png)
+
+- Storage Management Form:
+
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(13).png)
+
+- Bill Management Form:
+
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(14).png)
+
+- Bill Details Nanagement Form:
+
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(15).png)
+
+- Revenual Statistics Form:
+
+  ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(16).png)
+  
+
