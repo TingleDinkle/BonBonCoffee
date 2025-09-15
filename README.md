@@ -246,6 +246,6 @@ EXEC ThongKeDoanhThuTheoNam @Nam = ?;
 ```
 # =====================================
 # Source Code Directory Structure:
-<pre><code>``` /project-root │ ├── src/ │ └── main/ │ ├── java/ │ │ └── com/tenproject/ │ │ ├── views/ # Giao diện người dùng (Swing) │ │ ├── models/ # Các lớp đối tượng, DTO │ │ └── services/ # Xử lý nghiệp vụ, truy xuất dữ liệu │ └── resources/ │ └── images/ # Tài nguyên hình ảnh │ └── pom.xml ```</code></pre>
+<pre><code>``` /project-root │ ├── src/ │ └── main/ │ ├── java/ │ │ └── com/ │ │ └── tenproject/ │ │ ├── views/ # Giao diện người dùng (Swing) │ │ ├── models/ # Các lớp đối tượng, DTO │ │ └── services/ # Xử lý nghiệp vụ, truy xuất dữ liệu │ └── resources/ │ └── images/ # Tài nguyên hình ảnh │ └── pom.xml ```</code></pre>
 
 
