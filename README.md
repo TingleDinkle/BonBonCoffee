@@ -1,7 +1,7 @@
 # BonBonCoffee
 Lebron Brand Coffee App
 
-Literally what it is, yes. Coded in Netbeans and is connected to an SQL Database which I'm not sure how 2 upload here
+Literally what it is, yes. Coded in Netbeans and is connected to an SQL Database
 
 
 Pretty dang cool
