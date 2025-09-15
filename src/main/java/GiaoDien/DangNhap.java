@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author hongd
+ * @author phonga
  */
 public class DangNhap extends javax.swing.JDialog {
     public String TenDN;

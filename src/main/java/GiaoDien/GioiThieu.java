@@ -6,7 +6,7 @@ package GiaoDien;
 
 /**
  *
- * @author hongd
+ * @author phonga
  */
 public class GioiThieu extends javax.swing.JFrame {
 

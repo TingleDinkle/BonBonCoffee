@@ -6,7 +6,7 @@ package Mode;
 
 /**
  *
- * @author hongd
+ * @author phonga
  */
 public class DoanhThu {
     String Thang,SanPham,TongTien;

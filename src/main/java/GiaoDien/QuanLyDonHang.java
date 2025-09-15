@@ -703,9 +703,8 @@ public class QuanLyDonHang extends javax.swing.JFrame {
     private void cboKhachHangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboKhachHangActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cboKhachHangActionPerformed
+    
 
-<<<<<<< HEAD
-=======
     private void btnTaoMaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTaoMaActionPerformed
         // TODO add your handling code here:
         try {
@@ -728,7 +727,6 @@ public class QuanLyDonHang extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnTaoMaActionPerformed
 
->>>>>>> 865be174a485c2671a19da1ab16eb6c724d62a57
     /**
      * @param args the command line arguments
      */

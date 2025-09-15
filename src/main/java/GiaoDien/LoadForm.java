@@ -11,7 +11,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author hongd
+ * @author phonga
  */
 public class LoadForm extends javax.swing.JDialog {
     private Timer timer;

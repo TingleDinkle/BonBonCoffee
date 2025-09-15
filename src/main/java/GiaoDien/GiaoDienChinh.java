@@ -26,7 +26,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author hongd
+ * @author phonga
  */
 public class GiaoDienChinh extends javax.swing.JFrame {
 
