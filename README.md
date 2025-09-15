@@ -129,5 +129,98 @@ Variable names, classes, and methods must be clearly named; important code secti
 - Revenual Statistics Form:
 
   ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(16).png)
-  
+# ===================================== 
+# Creating Database:
+Table User:
+```bash
+create table NguoiDung(
+	MaND int not null primary key identity(1,1),
+	TenDangNhap nvarchar(100) not null,
+	MatKhau varchar(50) not null,
+	VaiTro bit not null,
+)
+```
+Table Customer:
+```bash
+create table KhachHang(
+	MaKH char(5) not null primary key,
+	TenKH nvarchar(100) not null,
+	Tuoi int not null,
+	GioiTinh bit not null,
+	SDT char(10) not null,
+)
+```
+Table Employee:
+```bash
+create table NhanVien(
+	MaNV char(5) not null primary key,
+	HoTenNV nvarchar(100) not null,
+	VaiTro nvarchar(100) not null,
+	Tuoi int not null,
+	SDT char(10) not null,
+	GioiTinh bit not null,
+)
+```
+Table Storage:
+```bash
+create table Kho(
+	MaNL char(5) not null primary key,
+	TenNL nvarchar(100) not null,
+	SoLuong float not null,
+	DonVi nvarchar(100) not null,
+)
+```
+Table Products:
+```bash
+create table SanPham(
+	MaSP char(5) not null primary key,
+	MaNL char(5) not null,
+	TenSP nvarchar(100) not null,
+	GiaTien money not null,
+	MoTa nvarchar(100) not null,
+	LoaiSP nvarchar(100) not null,
+	CONSTRAINT fk_SanPham_Kho FOREIGN KEY (MaNL)REFERENCES Kho(MaNL),
+)
+```
+Table Orders:
+```bash
+create table DonHang(
+	MaDH char(5) not null primary key,
+	MaNV char(5) not null,
+	MaKH char(5) not null,
+	MaSP char(5) not null,
+	Size char(2) not null,
+	SoLuong int not null,
+	NgayDatHang date not null,
+	HinhThucThanhToan nvarchar(100) not null,
+	TongTien money not null,
+	CONSTRAINT fk_DonHang_NhanVien FOREIGN KEY (MaNV)REFERENCES NhanVien(MaNV),
+	CONSTRAINT fk_DonHang_KhachHang FOREIGN KEY (MaKH)REFERENCES KhachHang(MaKH),
+	CONSTRAINT fk_DonHang_SanPham FOREIGN KEY (MaSP)REFERENCES SanPham(MaSP),
+)
+```
+Table Bills:
+```bash
+create table HoaDon(
+	MaHD char(5) not null primary key,
+	MaNV char(5) not null,
+	MaDH char(5) not null,
+	NgayLapHD date not null,
+	GiaTien money not null,
+	CONSTRAINT fk_HoaDon_NhanVien FOREIGN KEY (MaNV)REFERENCES NhanVien(MaNV),
+	CONSTRAINT fk_HoaDon_DonHang FOREIGN KEY (MaDH)REFERENCES DonHang(MaDH),
+)
+```
+Table BillDetails:
+```bash
+create table HoaDonChiTiet(
+	MaHDCT char(5) not null primary key,
+	MaHD char(5) not null,
+	MaSP char(5) not null,
+	SoLuongMua int not null,
+	TongTienThanhToan money not null,
+	CONSTRAINT fk_HoaDonChiTiet_HoaDon FOREIGN KEY (MaHD)REFERENCES HoaDon(MaHD),
+	CONSTRAINT fk_HoaDonChiTiet_SanPham FOREIGN KEY (MaSP)REFERENCES SanPham(MaSP),
+)
+```
 
