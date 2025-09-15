@@ -246,6 +246,6 @@ EXEC ThongKeDoanhThuTheoNam @Nam = ?;
 ```
 # =====================================
 # Source Code Directory Structure:
-<pre><code>``` /project-root │ ├── src/ │ └── main/ │ ├── java/ │ │ └── com/ │ │ └── tenproject/ │ │ ├── views/ # Giao diện người dùng (Swing) │ │ ├── models/ # Các lớp đối tượng, DTO │ │ └── services/ # Xử lý nghiệp vụ, truy xuất dữ liệu │ └── resources/ │ └── images/ # Tài nguyên hình ảnh │ └── pom.xml ```</code></pre>
 
+![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/32f0c85f779fdac8dddb29b0a582ae0d84e9f687/Screenshot%202025-09-15%20133758.png)
 
