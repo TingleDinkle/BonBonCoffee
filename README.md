@@ -223,4 +223,25 @@ create table HoaDonChiTiet(
 	CONSTRAINT fk_HoaDonChiTiet_SanPham FOREIGN KEY (MaSP)REFERENCES SanPham(MaSP),
 )
 ```
+Procedures for saving statistics:
+```bash
+CREATE PROCEDURE ThongKeDoanhThuTheoNam
+    @Nam INT 
+AS
+BEGIN
+    SELECT
+        MONTH(HD.NgayLapHD) AS Thang,
+        SP.LoaiSP AS LoaiSanPham,
+        COUNT(DISTINCT HD.MaHD) AS SoLuongDonHang,
+        CONCAT(FORMAT(SUM(HDCT.TongTienThanhToan), 'N0'), N' đồng') AS TongTienBanRa
+    FROM HoaDonChiTiet HDCT
+    JOIN HoaDon HD ON HDCT.MaHD = HD.MaHD
+    JOIN SanPham SP ON HDCT.MaSP = SP.MaSP
+    WHERE YEAR(HD.NgayLapHD) = @Nam 
+    GROUP BY YEAR(HD.NgayLapHD), MONTH(HD.NgayLapHD), SP.LoaiSP
+    ORDER BY Thang, LoaiSanPham;
+END;
+EXEC ThongKeDoanhThuTheoNam @Nam = ?;
+
+```
 
