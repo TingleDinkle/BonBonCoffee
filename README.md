@@ -1,5 +1,5 @@
 # BonBonCoffee
-Lebron Brand Coffee App
+Lebron Brand Coffee App Prototype
 
 Literally what it is, yes. Coded in Netbeans and is connected to an SQL Database
 
