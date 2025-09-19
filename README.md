@@ -27,6 +27,7 @@ The source code is organized according to the following structure:
 - images: contains image resources for the user interface
 
 Adheres to the principle of separating the interface from business logic.
+
 Variable names, classes, and methods must be clearly named; important code sections should include comments.
 # Management:
 
