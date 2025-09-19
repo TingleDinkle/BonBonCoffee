@@ -13,6 +13,7 @@ Use draw.io to see in more details
 # =====================================
 # Programming Guidelines:
 Feature Development
+
 The project is developed in Java (NetBeans Maven project), using SQL Server.
 
 The source code is organized according to the following structure:
