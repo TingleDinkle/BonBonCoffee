@@ -1,10 +1,10 @@
 # BonBonCoffee
 Lebron Brand Coffee App Prototype
 
-Literally what it is, yes. Coded in Netbeans and is connected to an SQL Database
+Literally what it is, yes. Coded in Netbeans and is connected to an SQL Database.
 
 
-Pretty dang cool
+Pretty dang cool!
 
 Here's the link to all the diagrams for this project: https://drive.google.com/file/d/17c8Nc03uZjd-ZBc57WcAlevTvrve23zp/view?usp=sharing
 
