@@ -10,7 +10,7 @@ Here's the link to all the diagrams for this project: https://drive.google.com/f
 
 Use draw.io to see in more details
 # How does it work?
-# =====================================
+
 # Programming Guidelines:
 Feature Development
 
@@ -72,7 +72,7 @@ Variable names, classes, and methods must be clearly named; important code secti
 - JDK: 23
 
 - Database Management System: SQL Server 2022
-# =====================================
+
 # Interface design for functions:
 
 - Load form:
@@ -131,7 +131,7 @@ Variable names, classes, and methods must be clearly named; important code secti
 - Revenual Statistics Form:
 
   ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(16).png)
-# ===================================== 
+
 # Creating Database:
 Table User:
 ```bash
@@ -246,7 +246,7 @@ END;
 EXEC ThongKeDoanhThuTheoNam @Nam = ?;
 
 ```
-# =====================================
+
 # Source Code Directory Structure:
 
 ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/32f0c85f779fdac8dddb29b0a582ae0d84e9f687/Screenshot%202025-09-15%20133758.png)
