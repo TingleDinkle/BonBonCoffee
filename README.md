@@ -1,18 +1,19 @@
 # BonBonCoffee
-Lebron Brand Coffee App
+Lebron Brand Coffee App Prototype
 
-Literally what it is, yes. Coded in Netbeans and is connected to an SQL Database
+Literally what it is, yes. Coded in Netbeans and is connected to an SQL Database.
 
 
-Pretty dang cool
+Pretty dang cool!
 
 Here's the link to all the diagrams for this project: https://drive.google.com/file/d/17c8Nc03uZjd-ZBc57WcAlevTvrve23zp/view?usp=sharing
 
 Use draw.io to see in more details
 # How does it work?
-# =====================================
+
 # Programming Guidelines:
 Feature Development
+
 The project is developed in Java (NetBeans Maven project), using SQL Server.
 
 The source code is organized according to the following structure:
@@ -26,6 +27,7 @@ The source code is organized according to the following structure:
 - images: contains image resources for the user interface
 
 Adheres to the principle of separating the interface from business logic.
+
 Variable names, classes, and methods must be clearly named; important code sections should include comments.
 # Management:
 
@@ -70,7 +72,7 @@ Variable names, classes, and methods must be clearly named; important code secti
 - JDK: 23
 
 - Database Management System: SQL Server 2022
-# =====================================
+
 # Interface design for functions:
 
 - Load form:
@@ -129,7 +131,7 @@ Variable names, classes, and methods must be clearly named; important code secti
 - Revenual Statistics Form:
 
   ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/520546b1e2d7b98f0e6f863dd8ef2bbb5289f978/unnamed%20(16).png)
-# ===================================== 
+
 # Creating Database:
 Table User:
 ```bash
@@ -244,11 +246,11 @@ END;
 EXEC ThongKeDoanhThuTheoNam @Nam = ?;
 
 ```
-# =====================================
+
 # Source Code Directory Structure:
 
 ![image alt](https://github.com/TingleDinkle/BonBonCoffee/blob/32f0c85f779fdac8dddb29b0a582ae0d84e9f687/Screenshot%202025-09-15%20133758.png)
 
-# Testings were conducted throughly, program works as expected.
+# Testings were conducted thoroughly, program works as expected.
 I won't provide the unit testings though.
 
