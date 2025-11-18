@@ -4,11 +4,7 @@
  */
 package GiaoDien;
 
-import Mode.NguoiDung;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import Services.SecurityService;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
@@ -18,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class DangNhap extends javax.swing.JDialog {
     public String TenDN;
-    
+
 
     /**
      * Creates new form DangNhap
@@ -29,7 +25,7 @@ public class DangNhap extends javax.swing.JDialog {
         setLocationRelativeTo(null);
         ImageIcon icon = new ImageIcon(getClass().getResource("/Images/logoBonBon.png"));
         setIconImage(icon.getImage());
-        
+
     }
 
     private boolean isDangNhapThanhCong = false;
@@ -38,38 +34,26 @@ public class DangNhap extends javax.swing.JDialog {
         return isDangNhapThanhCong;
     }
 
-    public NguoiDung DangNhap() {
-        String url = "jdbc:sqlserver://26.107.57.204:1433;databaseName=DATN_PRO230;user=datn;password=123;trustServerCertificate=true";
-        String ten = txtTenTK.getText();
-        String mk = new String(txtMK.getPassword());
-        String sql = "Select VaiTro From NguoiDung where TenDangNhap = ? AND MatKhau = ?";
+    public void authenticate() {
+        String username = SecurityService.sanitizeString(txtTenTK.getText());
+        String password = new String(txtMK.getPassword());
 
-        try {
-            Connection conn = DriverManager.getConnection(url);
-            PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setString(1, ten);
-            ps.setString(2, mk);
-            ResultSet rs = ps.executeQuery();
-            if (rs.next()) {
-                boolean vaitro = rs.getBoolean("VaiTro");
-                if (vaitro) {
-                    isDangNhapThanhCong = true;
-                    TenDN = ten;
-                    this.dispose();
-                    JOptionPane.showMessageDialog(this, "Chào mừng Nhân viên!");
-                    
-                } else {
-                    isDangNhapThanhCong = true;
-                    TenDN = ten;
-                    this.dispose();
-                    JOptionPane.showMessageDialog(this, "Chào mừng Quản lý!");
-                }
-            } else {
-                JOptionPane.showMessageDialog(this, "Sai tài khoản hoặc mật khẩu!");
-            }
-        } catch (Exception e) {
+        if (username == null || username.isEmpty() || password == null || password.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Vui lòng nhập đầy đủ thông tin!");
+            return;
         }
-        return null;
+
+        if (SecurityService.authenticateUser(username, password)) {
+            isDangNhapThanhCong = true;
+            TenDN = username;
+            this.dispose();
+
+            String welcomeMessage = SecurityService.isCurrentUserManager() ?
+                "Chào mừng Quản lý!" : "Chào mừng Nhân viên!";
+            JOptionPane.showMessageDialog(this, welcomeMessage);
+        } else {
+            JOptionPane.showMessageDialog(this, "Sai tài khoản hoặc mật khẩu!");
+        }
     }
 
     /**
@@ -199,7 +183,7 @@ public class DangNhap extends javax.swing.JDialog {
 
     private void btnDangNhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDangNhapActionPerformed
         // TODO add your handling code here:
-        this.DangNhap();
+        this.authenticate();
     }//GEN-LAST:event_btnDangNhapActionPerformed
 
     private void txtMKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMKActionPerformed
