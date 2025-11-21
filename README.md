@@ -1,3 +1,5 @@
+<p align="center"><img src="data/logo.png" alt="BonBon Coffee Logo" width="150"></p>
+
 # BonBonCoffee
 Lebron Brand Coffee App Prototype
 
@@ -253,4 +255,3 @@ EXEC ThongKeDoanhThuTheoNam @Nam = ?;
 
 # Testings were conducted thoroughly, program works as expected.
 I won't provide the unit testings though.
-
