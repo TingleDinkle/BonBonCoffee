@@ -8,7 +8,7 @@
 </p>
 
 # BonBonCoffee
-Lebron Brand Coffee App Prototype
+BonBonBrand Coffee App Prototype
 
 Literally what it is, yes. Coded in Netbeans and is connected to an SQL Database.
 
